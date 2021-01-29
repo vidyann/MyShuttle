@@ -15,7 +15,7 @@ public class Distance
              public float startingpoint;
         public float destpoint;
      
-     /*
+     /* testing
      function verify_geolocation_capability()
     {
        if (navigator.geolocation)

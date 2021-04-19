@@ -1,7 +1,7 @@
 # This workflow will build a Java project with Maven
 # For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-maven
 
-name: Java CI with Maven
+name: Build with Maven and Deploy to Azure App Service
 
 on:
   push:
@@ -21,7 +21,7 @@ jobs:
       with:
         java-version: '11'
         distribution: 'adopt'
-    - name: Build with Maven
+    - name: Build and Deploy
       run: mvn -B package --file pom.xml -DskipTests --settings ./maven/settings.xml 
     - name: 'Deploy Azure Web App'
       uses: azure/webapps-deploy@v1

@@ -23,3 +23,8 @@ jobs:
         distribution: 'adopt'
     - name: Build with Maven
       run: mvn -B package --file pom.xml -DskipTests --settings ./maven/settings.xml 
+    - name: 'Deploy Azure Web App'
+      uses: azure/webapps-deploy@v1
+      with: 
+        app-name: shuttleapp
+        publish-profile: ${{ secrets.AZURE_PUBLISH_PROFILE }}

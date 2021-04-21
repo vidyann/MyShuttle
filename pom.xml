@@ -5,7 +5,7 @@
   <groupId>com.microsoft.example</groupId>
   <artifactId>myshuttle</artifactId>
   <version>0.0.1</version>
-  <packaging>jar</packaging>
+  <packaging>war</packaging>
   <build>
   	<finalName>myshuttledev</finalName>
     <plugins>
